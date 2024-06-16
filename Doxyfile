@@ -1,3 +1,5 @@
+PROJECT_NAME           = C++ CLI
+
 GENERATE_TREEVIEW      = YES
 DISABLE_INDEX          = NO
 FULL_SIDEBAR           = NO
