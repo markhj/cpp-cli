@@ -16,6 +16,10 @@ deals with all the meticulous parsing, interpretation, error handling, and so fo
 Learn how to install and get started on
 [GitHub Pages documentation](https://markhj.github.io/cpp-cli/)
 
+## 📦 Samples
+
+You can build a couple of samples, by setting CMake environment variables ``BUILD_SAMPLES`` to ``1``.
+
 ## 🚧 To-do
 
 Believe or not, this library isn't done. Here are features planned for future releases:

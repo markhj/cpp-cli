@@ -23,8 +23,10 @@ include_directories(lib/src include/cpp-cli/contracts include)
 # Build library
 add_subdirectory(lib)
 
-# Build samples
-add_subdirectory(samples)
+# Build samples (if requested)
+if ($ENV{BUILD_SAMPLES})
+    add_subdirectory(samples)
+endif ()
 
 # Build tests (if requested)
 if ($ENV{BUILD_TESTS})
