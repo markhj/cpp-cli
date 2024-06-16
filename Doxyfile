@@ -1,0 +1,22 @@
+GENERATE_TREEVIEW      = YES
+DISABLE_INDEX          = NO
+FULL_SIDEBAR           = NO
+HTML_EXTRA_STYLESHEET  = vendor/doxygen-awesome-css/doxygen-awesome.css \
+                        vendor/doxygen-awesome-css/doxygen-awesome-sidebar-only.css
+HTML_COLORSTYLE        = LIGHT
+
+INPUT                  = lib/src \
+                            include/cpp-cli \
+                            docs \
+
+EXCLUDE_PATTERNS       = */parts/*
+
+OUTPUT_DIRECTORY       = build/docs
+
+SHOW_FILES             = NO
+
+RECURSIVE              = YES
+
+GROUP_NESTED_COMPOUNDS = NO
+
+GENERATE_LATEX         = NO
