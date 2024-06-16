@@ -23,7 +23,17 @@ For instance: ``thirdparty/cpp-cli``
 
 @include{doc} docs/install/parts/setup-submodule.md
 
-@include{doc} docs/install/parts/build-with-cmake.md
+To build the library, you can integrate it in your main project's ``CMakeLists.txt``.
+Doing so will ensure the library is built for the same platform as your other binaries.
+
+Add this to your CMake:
+
+````cmake
+add_subdirectory(vendor/cpp-cli)
+````
+
+You can replace ``vendor/cpp-cli`` with another directory,
+if you located it somewhere else.
 
 ## Connecting with your project
 

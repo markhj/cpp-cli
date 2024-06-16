@@ -7,15 +7,15 @@ include_directories(src)
 
 # cpp-cli library
 add_library(cpp_cli STATIC
-        ${CMAKE_SOURCE_DIR}/include/cpp-cli/contracts/helper.hpp
+        ../include/cpp-cli/contracts/helper.hpp
         src/services/cli.cpp
         src/utilities/interpretation.cpp
         src/services/interpreter.cpp
         src/utilities/subcommand.cpp
         src/services/io.cpp
-        ${CMAKE_SOURCE_DIR}/include/cpp-cli/contracts/console-io.hpp
-        ${CMAKE_SOURCE_DIR}/include/cpp-cli/cpp-cli.hpp
-        ${CMAKE_SOURCE_DIR}/include/cpp-cli/misc/enums.hpp
+        ../include/cpp-cli/contracts/console-io.hpp
+        ../include/cpp-cli/cpp-cli.hpp
+        ../include/cpp-cli/misc/enums.hpp
         src/utilities/std-helper.cpp
         src/utilities/value.cpp)
 
