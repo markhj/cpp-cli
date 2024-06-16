@@ -97,6 +97,10 @@ $(document).ready(function(){initNavTree('install-submodule.html',''); initResiz
 <dl class="section note"><dt>Note</dt><dd>It's recommended to group submodules in a relevant directory, such as <code>vendor</code> or <code>thirdparty</code>. Furthermore, it's recommended to include the library name. For instance: <code>thirdparty/cpp-cli</code></dd></dl>
 <h2><a class="anchor" id="autotoc_md14"></a>
 Build</h2>
+<p>To build the library, you can integrate it in your main project's <code>CMakeLists.txt</code>. Doing so will ensure the library is built for the same platform as your other binaries.</p>
+<p>Add this to your CMake:</p>
+<div class="fragment"><div class="line">add_subdirectory(vendor/cpp-cli)</div>
+</div><!-- fragment --><p>You can replace <code>vendor/cpp-cli</code> with another directory, if you located it somewhere else.</p>
 <h2><a class="anchor" id="autotoc_md15"></a>
 Connecting with your project</h2>
 <p>In your project's <code>CMakeLists.txt</code> file, you start by defining the path to the library. It could look something like this:</p>
